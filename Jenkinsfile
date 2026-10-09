@@ -9,7 +9,7 @@ pipeline {
         }
          stage('setup python') {
             steps {
-                sh "python3 -m pip3 install -r requirements.txt"
+                sh "python3 -m pip install -r requirements.txt"
             }
         }
         stage('run python program') {
